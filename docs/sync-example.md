@@ -1,0 +1,3 @@
+# Sync Example
+
+<sync-example />
