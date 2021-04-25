@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sync | Laravel Media Library Client</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="A JS/TS client for laravel-media-library">
+    <meta property="og:site_name" content="Laravel Media Library Client">
+    <meta property="og:title" content="Sync">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/usage/sync.html">
+    <meta name="twitter:title" content="Sync">
+    <meta name="twitter:url" content="/usage/sync.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#3eaf7c">
+    
+    <link rel="preload" href="/laravel-media-library-client/assets/css/0.styles.5bfb80f6.css" as="style"><link rel="preload" href="/laravel-media-library-client/assets/js/app.2f587409.js" as="script"><link rel="preload" href="/laravel-media-library-client/assets/js/4.d6191330.js" as="script"><link rel="preload" href="/laravel-media-library-client/assets/js/21.05e1cf1f.js" as="script"><link rel="prefetch" href="/laravel-media-library-client/assets/js/1.2cb0d3aa.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/10.354d9418.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/11.0f68adf5.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/12.b210ae9e.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/13.364ec19f.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/14.93fb5c44.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/15.fa86488f.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/16.992ea426.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/17.d124eca9.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/18.a1aa5a07.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/19.5295e197.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/2.133c1676.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/20.48ee49f0.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/5.bb7d5a37.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/6.6a73cadd.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/7.3483df2a.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/8.cb1d74cc.js"><link rel="prefetch" href="/laravel-media-library-client/assets/js/9.15ba1125.js">
+    <link rel="stylesheet" href="/laravel-media-library-client/assets/css/0.styles.5bfb80f6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/laravel-media-library-client/" class="home-link router-link-active"><!----> <span class="site-name">Laravel Media Library Client</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/laravel-media-library-client/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/moirei/laravel-media-library" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Laravel Media Library
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/moirei/laravel-media-library-client" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/laravel-media-library-client/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://github.com/moirei/laravel-media-library" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Laravel Media Library
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/moirei/laravel-media-library-client" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/laravel-media-library-client/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/laravel-media-library-client/usage/" aria-current="page" class="sidebar-link">Usage</a></li><li><a href="/laravel-media-library-client/usage/files.html" class="sidebar-link">Files</a></li><li><a href="/laravel-media-library-client/usage/folders.html" class="sidebar-link">Folders</a></li><li><a href="/laravel-media-library-client/usage/attachments.html" class="sidebar-link">Attachments</a></li><li><a href="/laravel-media-library-client/usage/sync.html" aria-current="page" class="active sidebar-link">Sync</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/laravel-media-library-client/usage/sync.html#files" class="sidebar-link">Files</a></li><li class="sidebar-sub-header"><a href="/laravel-media-library-client/usage/sync.html#folders" class="sidebar-link">Folders</a></li><li class="sidebar-sub-header"><a href="/laravel-media-library-client/usage/sync.html#vue-example" class="sidebar-link">Vue Example</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="sync"><a href="#sync" class="header-anchor">#</a> Sync</h1> <p>The sync API is intented for reactive UI intengration.</p> <p>Once instantiated, state such as the current working directory (CWD), items in the CWD, lodaing state, uploads/creates/updates and delets and auto binded.</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Media <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@moirei/laravel-media-library-client'</span>
+
+<span class="token keyword">const</span> media <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Media</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> sync <span class="token operator">=</span> media<span class="token punctuation">.</span>sync
+</code></pre></div><p>Main interfaces</p> <ul><li><code>cwd</code>: the current working directory. If updated, the <code>files</code> is automatically fetched and updated</li> <li><code>files</code>: the files in the <code>cwd</code>. Automatically updated</li> <li><code>files[i].loading</code>: set to <code>true</code> when updating/moving/delting an item</li> <li><code>loading</code>: set to <code>true</code> when fetching <code>files</code></li></ul> <h2 id="files"><a href="#files" class="header-anchor">#</a> Files</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token comment">// IF location is not given in options, the cwd is used</span>
+sync<span class="token punctuation">.</span><span class="token function">upload</span><span class="token punctuation">(</span>upload<span class="token punctuation">,</span> options<span class="token punctuation">)</span>
+
+<span class="token comment">// When updated, its option in `sync.files` is updated</span>
+sync<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span>file<span class="token punctuation">,</span> input<span class="token punctuation">)</span>
+
+<span class="token comment">// Added to `sync.files` if location is cwd and removed otherwise</span>
+sync<span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span>file<span class="token punctuation">,</span> location<span class="token punctuation">)</span>
+
+<span class="token comment">// Removed from cwd if file is in `sync.files`</span>
+sync<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>file<span class="token punctuation">,</span> options<span class="token punctuation">)</span>
+</code></pre></div><h2 id="folders"><a href="#folders" class="header-anchor">#</a> Folders</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code>
+<span class="token comment">// IF location is not given in options, the cwd is used</span>
+sync<span class="token punctuation">.</span>folder<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token string">'My Folder'</span><span class="token punctuation">,</span> options<span class="token punctuation">)</span>
+
+<span class="token comment">// When updated, its option in `sync.files` is updated</span>
+sync<span class="token punctuation">.</span>folder<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span>folder<span class="token punctuation">,</span> input<span class="token punctuation">)</span>
+
+<span class="token comment">// Added to `sync.files` if location is cwd and removed otherwise</span>
+sync<span class="token punctuation">.</span>folder<span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span>folder<span class="token punctuation">,</span> location<span class="token punctuation">)</span>
+
+<span class="token comment">// Removed from cwd if folder is in `sync.files`</span>
+sync<span class="token punctuation">.</span>folder<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>folder<span class="token punctuation">,</span> options<span class="token punctuation">)</span>
+</code></pre></div><h2 id="vue-example"><a href="#vue-example" class="header-anchor">#</a> Vue Example</h2> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>v-text-field</span> <span class="token attr-name">label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>CWD<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>media.cwd<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>media.loading<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      Loading Library...
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-else</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item in media.files<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item.id<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item.loading<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          Loading...
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-else</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span>{{ item.name }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>small</span><span class="token punctuation">&gt;</span></span>Type: {{ item.type }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>small</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>share<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Share<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>rename(item)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Rename<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>del(item)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Delete<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>openUpload<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Upload<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>file<span class="token punctuation">&quot;</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>file<span class="token punctuation">&quot;</span></span> <span class="token attr-name">hidden</span> <span class="token attr-name">multiple</span> <span class="token attr-name">@change</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>upload<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token comment">// import { Media } from '@moirei/laravel-media-library-client'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Media <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./../../build/index'</span>
+
+<span class="token keyword">const</span> media <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Media</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  baseURL<span class="token operator">:</span> <span class="token string">'http://127.0.0.1:8000/media-library'</span><span class="token punctuation">,</span>
+  forceDeletes<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">data</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+    media<span class="token operator">:</span> media<span class="token punctuation">.</span>sync<span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token function">openUpload</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>file<span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">async</span> <span class="token function">upload</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> target<span class="token operator">:</span> <span class="token punctuation">{</span> files <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span></span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>media<span class="token punctuation">.</span><span class="token function">upload</span><span class="token punctuation">(</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">async</span> <span class="token function">share</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">const</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token keyword">public</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        access_emails<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token string">'augustusokoye@moirei.com'</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        access_keys<span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token string">'moirei'</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>type <span class="token operator">==</span> <span class="token string">'folder'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">const</span> <span class="token punctuation">{</span> url <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> media<span class="token punctuation">.</span>folder<span class="token punctuation">.</span><span class="token function">share</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> options<span class="token punctuation">)</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Shareable link'</span><span class="token punctuation">,</span> url<span class="token punctuation">)</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token keyword">const</span> <span class="token punctuation">{</span> url <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> media<span class="token punctuation">.</span><span class="token function">share</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> options<span class="token punctuation">)</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Shareable link'</span><span class="token punctuation">,</span> url<span class="token punctuation">)</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">move</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>type <span class="token operator">==</span> <span class="token string">'folder'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>media<span class="token punctuation">.</span>folder<span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> <span class="token string">'Products'</span><span class="token punctuation">)</span>
+        <span class="token comment">// this.media.folder.move(item, '/')</span>
+      <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>media<span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> <span class="token string">'Products'</span><span class="token punctuation">)</span>
+        <span class="token comment">// this.media.move(item, '/')</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>media<span class="token punctuation">.</span><span class="token function">fresh</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">rename</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>type <span class="token operator">==</span> <span class="token string">'folder'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>media<span class="token punctuation">.</span>folder<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          name<span class="token operator">:</span> <span class="token string">'Updated Folder Name'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>media<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span>item<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+          name<span class="token operator">:</span> <span class="token string">'Updated File Name'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">del</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span>item<span class="token punctuation">.</span>type <span class="token operator">==</span> <span class="token string">'folder'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>media<span class="token punctuation">.</span>folder<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>media<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/laravel-media-library-client/usage/attachments.html" class="prev">
+        Attachments
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/laravel-media-library-client/assets/js/app.2f587409.js" defer></script><script src="/laravel-media-library-client/assets/js/4.d6191330.js" defer></script><script src="/laravel-media-library-client/assets/js/21.05e1cf1f.js" defer></script>
+  </body>
+</html>
